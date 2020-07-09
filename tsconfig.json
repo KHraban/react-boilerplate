@@ -1,0 +1,36 @@
+{
+  // WARNING: using Babel for compilation skips some of the tsc compiler options.
+  // Alternative is to set them up in babel.config.js
+  // See below links for details
+  // https://babeljs.io/docs/en/babel-plugin-transform-typescript#caveats
+  // https://babeljs.io/docs/en/babel-plugin-transform-typescript#typescript-compiler-options
+  "compilerOptions": {
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "target": "es5",
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "strict": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "noEmitOnError": true,
+    "jsx": "react"
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "build"
+  ]
+}
