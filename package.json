@@ -6,7 +6,7 @@
     "start": "webpack-dev-server --env development",
     "build-dev": "tsc && webpack --env development",
     "build-prod": "tsc && webpack --env production",
-    "lint": "eslint \"src/**/**\" --ext .js,.jsx,.ts,.tsx --quiet --fix",
+    "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx --quiet --fix",
     "check-types": "tsc",
     "test": "jest"
   },
